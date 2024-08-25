@@ -1,0 +1,57 @@
+.top-img {
+    width: 300px;
+    margin: 2rem;
+  }
+  
+  .menu-container {
+    height: 40rem;
+    width: 25rem;
+    background-color: orange;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    // Defining the grid areas
+    grid-template-areas: "top" "bottom";
+    overflow: hidden;
+  }
+  
+  .top-menu {
+    grid-area: top;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+    // Top will appear second after bottom
+    z-index: 1;
+  }
+  .bottom-menu {
+    grid-area: bottom;
+    padding: 1rem;
+    display: grid;
+    // 2 columns, one for the . and the other for the term
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    // The bottom will appear at the top --> first to appear
+    // z-index: 999; to be sure that bottom card is on top of everything
+    z-index: 999; 
+  }
+  
+  .bar {
+    height: 42rem;
+    width: 5rem;
+    background-color: #53c1de;
+     // The bar can move relative according to its normal position
+    position: relative;
+    // This is the last one to appear at the back 
+    z-index: 0;
+    top: -42rem;
+    left: 10rem;
+    transform: rotate(-45deg);
+  }
+  
+// z-index: order of appearance: bottom -> top -> bar
+
+
+  
