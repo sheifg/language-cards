@@ -1,7 +1,7 @@
 ## **Language Cards**
 
 ### *Project Description:*
-Language card is a React project and it was created using Vite. To style the project it was used Sass.
+Language cards is a React project and it was created using Vite. To style the project it was used Sass.
 
 ### *Getting started:* 
   - First install all the dependencies:
